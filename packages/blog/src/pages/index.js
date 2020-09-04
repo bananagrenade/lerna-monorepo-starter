@@ -11,7 +11,7 @@ const BlogPage = ({ data }) => {
       <ItemCardWrapper>
         {edges && edges.map(edge => <ItemCard key={edge.node.id} data={edge.node} slug="post" />)}
       </ItemCardWrapper>
-      <a href={process.env.SHOP_URL}>Go back to the shop</a>
+      <a href={`http://${process.env.SHOP_URL}`}>Go to Shop</a>
     </div>
   )
 }
